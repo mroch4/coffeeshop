@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="kawa, coffee, cappuccino">
+    <meta name="description" content="The best coffee in the web!">
+    <meta name="author" content="Marcin Rochowski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Z miłości do kawy</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo_coffee_shop">
+        </div>
+        <div id="navbar">
+            <button class="button current">o nas</button>
+            <a href="https://allegro.pl/kategoria/produkty-spozywcze-kawa-74030?bmatch=dict201214-ctx-sup-1-3-1218"
+                target="blank"><button class="hoverBtn button">sklep</button></a>
+            <a href="carrier.html"><button class="hoverBtn button">kariera</button></a>
+            <a href="contact.html"><button class="hoverBtn button">kontakt</button></a>
+            <a href="game.html"><button class="hoverBtn button">coffe game</button></a>
+        </div>
+    </header>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/slider_1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/slider_2.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/slider_3.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/slider_4.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="container1">
+        <section class="icons">
+            <div class="icon"><img src="img/zoom_1.png"></div>
+            <div class="icon"><img src="img/zoom_2.png"></div>
+            <div class="icon"><img src="img/zoom_3.png"></div>
+        </section>
+    </div>
+    <section class="video">
+        <video id="videoBG" poster="img/video.png" autoplay muted loop>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <div class="container2">
+            <div class="info">
+                <p>Kawa – napój sporządzany z palonych, a następnie zmielonych lub poddanych instantyzacji ziaren
+                    kawowca, zwykle podawany na gorąco. Pochodzi z Etiopii, w Europie pojawiła się około XVI wieku.
+                    Jedna z najpopularniejszych używek na świecie i główne źródło kofeiny.</p><br>
+            </div>
+            <div class="info">
+                <p>Nazwa kawy pochodzi prawdopodobnie od arabskiego kahwa. Do większości języków europejskich
+                    przeniknęła poprzez tureckie słowo kahve i utworzoną od niego włoską nazwę caffè. Drugą
+                    prawdopodobną etymologią nazwy kawa jest nazwa etiopskiego miasta Kaffa, dziś – Kefa.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="logo_coffee_shop">
+        </div>
+        <div class="footer">&copy; COFFEE SHOP by Marcin Rochowski, 2020</div>
+    </footer>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <label class="close" onclick="closePopup()">&times;</label>
+            <div id="dialog" class="window">
+                <div class="box">
+                    <div class="newletter-title">
+                        <h2>Zapisz się i zagarnij 10% rabatu</h2>
+                    </div>
+                    <div class="box-content newleter-content">
+                        <label>Zapisz się na nasz newsletter, aby śledzić na bieżąco nasze aktualności i zgarniać
+                            darmowe próbki naszych najnowszych produktów!</label>
+                        <div id="frm_subscribe">
+                            <form name="subscribe" id="subscribe_popup">
+                                <div>
+                                    <input type="email" value="" name="subscribe_pemail" id="subscribe_pemail" required>
+                                    <div id="notification"></div>
+                                    <input type="submit" class="button" value="Zapisz się!">
+                                </div>
+                            </form>
+                            <div class="subscribe-bottom">
+                                <input type="checkbox" id="newsletter_popup_dont_show_again">
+                                <label for="newsletter_popup_dont_show_again" class="newsletter_popup_dont_show_again"
+                                    onclick="closePopup()">Nie pokazuj więcej tego okna</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
